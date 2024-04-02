@@ -1,30 +1,41 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+	<!-- <nav>
+		<router-link to="/">Inicio</router-link> |
+		<router-link to="/about">About</router-link>
+	</nav> -->
+	<router-view id="routerView"/>
+
+	<nav class="navbar  fixed-bottom bg-body-tertiary">
+		<div class="container-fluid">
+			<div class=" navbar-collapse" id="navbarSupportedContent">
+				<div class="row ">
+					<div class="col text-center">
+						<i class="bi bi-house"></i>
+						<p class="mb-0">Inicio</p>
+					</div>
+					<div class="col text-center">
+						<i class="bi bi-search"></i>
+						<p class="mb-0">Buscar</p>
+					</div>
+					<div class="col text-center">
+						<i class="bi bi-star"></i>
+						<p class="mb-0">Favoritos</p>
+					</div>
+					<div class="col text-center">
+						<i class="bi bi-cart"></i>
+						<p class="mb-0">Pedidos</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+nav p{
+	font-size:0.7rem;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+#routerView{
+	margin-bottom: 4rem;
 }
 </style>
